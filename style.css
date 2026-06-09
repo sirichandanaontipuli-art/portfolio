@@ -1,61 +1,79 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color:#f4f4f4;
-    margin:0;
-    text-align:center;
-}
-.header-photo{
-    width:100px;
-    height:100px;
-
-}
-
-section{
-    background:white;
-    margin:20px auto;
-    padding:20px;
-    border-radius:10px;
-    width:80%;
-    box-shadow:0 2px 8px rgba(0,0,0,0.2);
-}
-
-img{
-    border-radius:10px;
-    margin:10px;
-}
-
-ul{
-    list-style:none;
-    padding:0;
-}
-
-li{
-    padding:5px;
-}
-
-a{
-    background:#3498db;
-    color:white;
-    padding:10px 15px;
-    text-decoration:none;
-    border-radius:5px;
-}
-
-a:hover{
-    background:#2980b9;
-}
-footer {
-    background: #222;
-    color: white;
+body {
+    margin: 0;
+    font-family: Arial;
     text-align: center;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Hero */
+.hero {
+    background: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.btn {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+    padding: 30px;
+    background: #eee;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+nav {
+    background: #222;
     padding: 10px;
 }
 
-.profile{
-    width:100px;
-    height:100px;
-    border-radius:10px;
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
 }
-html {
-    scroll-behavior: smooth;
+.btn:hover {
+    background: darkblue;
+    transform: scale(1.05);
+}
+.box {
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
 }
