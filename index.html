@@ -1,80 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siri Chandana | Portfolio</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="header-inner">
-        <div>
-            <h1>Siri Chandana</h1>
-            <p>Student | Future Web Developer</p>
-        </div>
+<div class="calculator">
+
+    <input type="text" id="display" disabled>
+
+    <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="append('/')">/</button>
+        <button onclick="append('*')">*</button>
+        <button onclick="deleteLast()">⌫</button>
+
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('-')">-</button>
+
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('+')">+</button>
+
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="calculate()">=</button>
+
+        <button onclick="append('0')" class="zero">0</button>
+        <button onclick="append('.')">.</button>
     </div>
-</header>
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
-</nav>
-<nav>
-    <a href="#">Home</a>
-    <a href="#features">Features</a>
-    <a href="#contact">Contact</a>
-</nav>
 
-<main>
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <section>
+</div>
 
-    <img src="profile.jpg" alt="Profile Photo" width="150">
-    </section>
-        <p>Hello! I am Siri Chandana. I am learning web development and creating websites using HTML and CSS. I love building clean, responsive pages and making my portfolio better every day.</p>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Basic JavaScript</li>
-            <li>Responsive Design</li>
-        </ul>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>Personal Portfolio Website</h3>
-            <p>A simple portfolio website created using HTML and CSS to show my skills, projects, and contact information.</p>
-            <img src="project1.jpg" alt="Project screenshot">
-        </article>
-    </section>
-
-    <section id="resume" class="resume">
-        <h2>Resume</h2>
-        <p>Resume available upon request.</p>
-        <p>If you want to review my resume, click the button below.</p>
-        <a class="button" href="resume.html">View Resume</a>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:sirichandanaontipuli@gmail.com">sirichandanaontipuli@gmail.com</a></p>
-        <p>Phone: 6302528181</p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 Siri Chandana. All Rights Reserved.</p>
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
