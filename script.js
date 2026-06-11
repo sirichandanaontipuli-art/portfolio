@@ -1,21 +1,23 @@
-function append(value) {
-    document.getElementById("display").value += value;
-}
+const search = document.getElementById("search");
 
-function clearDisplay() {
-    document.getElementById("display").value = "";
-}
+if(search){
+    search.addEventListener("keyup", function() {
 
-function deleteLast() {
-    let display = document.getElementById("display");
-    display.value = display.value.slice(0, -1);
-}
+        let filter = search.value.toLowerCase();
 
-function calculate() {
-    try {
-        document.getElementById("display").value =
-            eval(document.getElementById("display").value);
-    } catch {
-        alert("Invalid Input");
-    }
+        let jobs = document.querySelectorAll(".job");
+
+        jobs.forEach(job => {
+
+            let title = job.querySelector("h3")
+                           .textContent
+                           .toLowerCase();
+
+            if(title.includes(filter)){
+                job.style.display = "block";
+            }else{
+                job.style.display = "none";
+            }
+        });
+    });
 }
